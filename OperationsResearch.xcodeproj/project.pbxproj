@@ -21,6 +21,9 @@
 		4E222F1518B648E600B59F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E222EF718B648E600B59F07 /* UIKit.framework */; };
 		4E222F1D18B648E600B59F07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E222F1B18B648E600B59F07 /* InfoPlist.strings */; };
 		4E222F1F18B648E600B59F07 /* OperationsResearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E222F1E18B648E600B59F07 /* OperationsResearchTests.m */; };
+		4E222F2A18B671E300B59F07 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E222F2918B671E300B59F07 /* ResultsViewController.m */; };
+		4E222F3018B69CCB00B59F07 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E222F2F18B69CCB00B59F07 /* InformationViewController.m */; };
+		4E222F3318B6BD2300B59F07 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E222F3218B6BD2300B59F07 /* ConfigViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		4E222F1A18B648E600B59F07 /* OperationsResearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OperationsResearchTests-Info.plist"; sourceTree = "<group>"; };
 		4E222F1C18B648E600B59F07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E222F1E18B648E600B59F07 /* OperationsResearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationsResearchTests.m; sourceTree = "<group>"; };
+		4E222F2818B671E300B59F07 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		4E222F2918B671E300B59F07 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		4E222F2E18B69CCB00B59F07 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		4E222F2F18B69CCB00B59F07 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		4E222F3118B6BD2300B59F07 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		4E222F3218B6BD2300B59F07 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +121,17 @@
 		4E222EF918B648E600B59F07 /* OperationsResearch */ = {
 			isa = PBXGroup;
 			children = (
-				4E222F0218B648E600B59F07 /* DAAppDelegate.h */,
-				4E222F0318B648E600B59F07 /* DAAppDelegate.m */,
 				4E222F0518B648E600B59F07 /* Main.storyboard */,
 				4E222F0818B648E600B59F07 /* DAViewController.h */,
 				4E222F0918B648E600B59F07 /* DAViewController.m */,
 				4E222F0B18B648E600B59F07 /* Images.xcassets */,
 				4E222EFA18B648E600B59F07 /* Supporting Files */,
+				4E222F2818B671E300B59F07 /* ResultsViewController.h */,
+				4E222F2918B671E300B59F07 /* ResultsViewController.m */,
+				4E222F2E18B69CCB00B59F07 /* InformationViewController.h */,
+				4E222F2F18B69CCB00B59F07 /* InformationViewController.m */,
+				4E222F3118B6BD2300B59F07 /* ConfigViewController.h */,
+				4E222F3218B6BD2300B59F07 /* ConfigViewController.m */,
 			);
 			path = OperationsResearch;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 		4E222EFA18B648E600B59F07 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E222F0218B648E600B59F07 /* DAAppDelegate.h */,
+				4E222F0318B648E600B59F07 /* DAAppDelegate.m */,
 				4E222EFB18B648E600B59F07 /* OperationsResearch-Info.plist */,
 				4E222EFC18B648E600B59F07 /* InfoPlist.strings */,
 				4E222EFF18B648E600B59F07 /* main.m */,
@@ -250,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E222F3018B69CCB00B59F07 /* InformationViewController.m in Sources */,
 				4E222F0018B648E600B59F07 /* main.m in Sources */,
 				4E222F0A18B648E600B59F07 /* DAViewController.m in Sources */,
 				4E222F0418B648E600B59F07 /* DAAppDelegate.m in Sources */,
+				4E222F3318B6BD2300B59F07 /* ConfigViewController.m in Sources */,
+				4E222F2A18B671E300B59F07 /* ResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +479,7 @@
 				4E222F2418B648E600B59F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E222F2518B648E600B59F07 /* Build configuration list for PBXNativeTarget "OperationsResearchTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +488,7 @@
 				4E222F2718B648E600B59F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
